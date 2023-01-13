@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final
+    </title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+    <!-- The next line is optional: MathJax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+
+<body id="container" data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <header id="nav_header">
+        <nav class="navbar navbar-light  fixed-top " id="navbar-example2" style="background-color: #DDEAF6">
+            <div class="container-fluid collapse navbar-collapse">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col ">
+                            <img id="logo" class="rounded float-start " src="assets/logo.png" alt="Person">
+                        </div>
+                        <div class="col">
+
+                            <p class="text-center fs-2">Course Name</p>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="dropdown float-end">
+                                <img id="login" class="rounded float" src="assets/login.png" alt="Person">
+                                <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    User Name
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" style="color: non;">
+                                    <li><a class="dropdown-item active" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Grades</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row" style="background-color: #027bec">
+                        <div class="col">
+                            <div class="dropdown ">
+                                <button class="btn btn-primary dropdown-toggle btn-lg" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Topics
+                                </button>
+                                <ul class="dropdown-menu " style="color: non;">
+                                    <li><a class="dropdown-item active" href="#"> Topic 1 </a></li>
+                                    <li><a class="dropdown-item" href="#"> Topic 2</a></li>
+                                    <li><a class="dropdown-item" href="#"> Topic 3</a></li>
+                                    <li><a class="dropdown-item" href="#"> Topic 4</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <p class="text-center fs-3 topicTitle">Topic Name</p>
+                        </div>
+                        <div class="col-sm">
+                            <div class="col">
+                                <div class="dropdown float-end ">
+                                    <button class="btn btn-primary dropdown-toggle btn-lg" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        My courses
+                                    </button>
+                                    <ul class="dropdown-menu " style="color: non;">
+                                        <li><a class="dropdown-item active" href="#">Course 1 </a></li>
+                                        <li><a class="dropdown-item" href="#">Course 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Course 3</a></li>
+                                        <li><a class="dropdown-item" href="#">Course 4</a></li>
+                                        <li><a class="dropdown-item" href="#">Course 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item col-sm navListItem">
+                                <a id="n1" class="nav-link" href="#section1">
+                                    <div id="navCon">
+                                        <img id="navImg" src="assets/1.png" alt="Person">
+                                        Introduction
+                                        
+                                    </div>
+                                    <img id="navImg" class="float-end " src="assets/0.png" alt="Person">
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item col-sm navListItem">
+                                <a class="nav-link" class="nav-item" href="#section2">
+                                    <div id="navCon">
+                                        <img id="navImg" src="assets/2.png" alt="Person">
+                                        Explanation
+                                    </div>
+                                    <img id="navImg" class="float-end " src="assets/0.png" alt="Person">
+                                </a>
+                            </li>
+                            <li class="nav-item col-sm navListItem">
+                                <a class="nav-link" class="nav-item" href="#section3">
+                                    <div id="navCon">
+                                        <img id="navImg" src="assets/3.png" alt="Person">
+                                        Practice-Zone
+                                    </div>
+                                    <img id="navImg" class="float-end " src="assets/0.png" alt="Person">
+                                </a>
+                            </li>
+                            <li class="nav-item col-sm navListItem">
+                                <a class="nav-link" class="nav-item" href="#section4">
+                                    <div id="navCon">
+                                        <img id="navImg" src="assets/4.png" alt="Person">
+                                        Solve
+                                    </div>
+                                    <img id="navImg" class="float-end " src="assets/0.png" alt="Person">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+
+
+        <section id="section1" class="container-fluid">
+            <h1>Introduction</h1>
+
+            <div class="container-xl intro internalDiv">
+
+                <div class="row  align-items-center ">
+                    <div class="col-3 ">
+
+                        <div class="align-items-start ">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <div class="col my">
+                                    <img id="navImg" class="rounded float " src="assets/img1.png" alt="Person">
+                                    <button class="nav-link active sec1button border border-primary "
+                                        id="v-pills-learObj-tab" data-bs-toggle="pill" data-bs-target="#v-pills-learObj"
+                                        type="button" role="tab" aria-controls="v-pills-learObj" aria-selected="true">
+                                        Learning Objectives
+                                    </button>
+                                    <img id="navImg" class="rounded float " src="assets/0.png" alt="Person">
+                                </div>
+                                <div class="col my">
+                                    <img id="navImg" class="rounded float " src="assets/img2.png" alt="Person">
+                                    <button class="nav-link  sec1button  border border-primary" id="Def-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-Def" type="button" role="tab"
+                                        aria-controls="v-pills-Def" aria-selected="false">
+                                        Definition
+                                    </button>
+                                    <img id="navImg" class="rounded float " src="assets/0.png" alt="Person">
+                                </div>
+                                <div class="col my">
+                                    <img id="navImg" class="rounded float " src="assets/img3.png" alt="Person">
+                                    <button class="nav-link  sec1button border border-primary" id="note-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-note" type="button" role="tab"
+                                        aria-controls="v-pills-note" aria-selected="false">
+                                        Notation
+                                    </button>
+                                    <img id="navImg" class="rounded float " src="assets/0.png" alt="Person">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border border-5" style="height: 350px; background-color: rgba(0,0,255,.1)">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-learObj" role="tabpanel"
+                                aria-labelledby="v-pills-learObj-tab">Learning Objectives</div>
+                            <div class="tab-pane fade" id="v-pills-Def" role="tabpanel"
+                                aria-labelledby="v-pills-Def-tab">Definition </div>
+                            <div class="tab-pane fade" id="v-pills-note" role="tabpanel"
+                                aria-labelledby="v-pills-note-tab">Notation </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <hr>
+        <section id="section2" class="container-fluid">
+            <h1>Explanation</h1>
+            <div class="container-xl intro internalDiv">
+
+                <div class="row  align-items-center ">
+                    <div class="col-3 ">
+
+                        <div class="align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <div class="col my">
+                                    <img id="navImg" class="rounded float " src="assets/img4.png" alt="Person">
+                                    <button class="nav-link active sec1button border border-primary"
+                                        id="v-pills-concept-tab" data-bs-toggle="pill" data-bs-target="#v-pills-concept"
+                                        type="button" role="tab" aria-controls="v-pills-concept" aria-selected="true">
+                                        Concept in Detail
+                                    </button>
+                                    <img id="navImg" class="rounded float " src="assets/0.png" alt="Person">
+                                </div>
+                                <div class="col my">
+                                    <img id="navImg" class="rounded float " src="assets/img5.png" alt="Person">
+                                    <button class="nav-link  sec1button border border-primary" id="videoe-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-video" type="button" role="tab"
+                                        aria-controls="v-pills-video" aria-selected="false">
+                                        Watch Video
+                                    </button>
+                                    <img id="navImg" class="rounded float " src="assets/0.png" alt="Person">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border border-5" style="height: 350px; background-color: rgba(0,0,255,.1)">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-concept" role="tabpanel"
+                                aria-labelledby="v-pills-concept-tab">Home</div>
+                            <div class="tab-pane fade" id="v-pills-video" role="tabpanel"
+                                aria-labelledby="v-pills-video-tab">Watch Video </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-xl intro ">
+                <div class="row  align-items-end ">
+                    <div class="col my">
+                        <img id="navImg" class="rounded float " src="assets/img6.png" alt="Person">
+                        <div class="sec2end sec1butto">
+                            Content
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section id="section3" class="container-fluid">
+            <h1>Practice-Zone</h1>
+            <div class="container-xl intro internalDiv">
+                <div class="container-xl tryit">
+                    <div class="row">
+                        <div class="col ">
+                            <a id="n1" class="nav-link">
+                                <div id="navCon">
+                                    <img id="navImg" src="assets/img7.png" alt="Person">
+                                    Try It
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col order-1">
+                            <a id="n1" class="nav-link">
+                                <div id="navCon " class="d-flex justify-content-end">
+                                    <img id="navImg" src="assets/img8.png" alt="Person">
+                                    <div class="col-md-4"> <button type="button" class="btn btn-secondary btn-lg"
+                                            data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                            <col>
+                                            Glossary
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1"
+                                            aria-labelledby="staticBackdrop2Label" aria-hidden="true">
+                                            <div class=" modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5 " id="staticBackdrop2Label">
+                                                            Glossary title</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body ">
+                                                        <p> Glossary details
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  align-items-center ">
+                    <p id="Problem">Problem statement </p>
+                </div>
+                <div class="row  align-items-center ">
+                    <div class="col-3 ">
+
+                        <div class=" align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <div class="col my">
+                                    <img id="navImg" class="rounded float " src="assets/n1.png" alt="Person">
+                                    <button class="nav-link active sec1button border border-primary"
+                                        id="v-pills-step1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-step1"
+                                        type="button" role="tab" aria-controls="v-pills-step1" aria-selected="true">
+                                        Step statement
+                                    </button>
+                                  
+                                </div>
+                                <div class="col my">
+                                    <img id="navImg" class="rounded float " src="assets/n2.png" alt="Person">
+                                    <button class="nav-link  sec1button border border-primary" id="v-pills-step2-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-step2" type="button" role="tab"
+                                        aria-controls="v-pills-step2" aria-selected="false">
+                                        Step statement
+                                    </button>
+                                </div>
+                                <div class="col my">
+                                    <img id="navImg" class="rounded float " src="assets/n3.png" alt="Person">
+                                    <button class="nav-link  sec1button border border-primary" id="v-pills-step3-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-step3" type="button" role="tab"
+                                        aria-controls="v-pills-step3" aria-selected="false">
+                                        Step statement
+                                    </button>
+                                </div>
+                                <div class="col my">
+                                    <img id="navImg" class="rounded float " src="assets/n4.png" alt="Person">
+                                    <button class="nav-link  sec1button border border-primary" id="v-pills-step4-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-step4" type="button" role="tab"
+                                        aria-controls="v-pills-step4" aria-selected="false">
+                                        Step statement
+                                    </button>
+                                </div>
+
+                                <button class="nav-link  sec1button border border-primary BTN " id="v-pills-step5-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-step5" type="button" role="tab"
+                                    aria-controls="v-pills-step5" aria-selected="false">
+                                    All steps statement
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border border-5" style="height: 350px; background-color: rgba(0,0,255,.1)">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-step1" role="tabpanel"
+                                aria-labelledby="v-pills-step1-tab">Step 1</div>
+                            <div class="tab-pane fade" id="v-pills-step2" role="tabpanel"
+                                aria-labelledby="v-pills-step2-tab">Step 2 </div>
+                            <div class="tab-pane fade" id="v-pills-step3" role="tabpanel"
+                                aria-labelledby="v-pills-step3-tab">Step 3</div>
+                            <div class="tab-pane fade" id="v-pills-step4" role="tabpanel"
+                                aria-labelledby="v-pills-step4-tab">Step 4</div>
+                            <div class="tab-pane fade" id="v-pills-step5" role="tabpanel"
+                                aria-labelledby="v-pills-step5-tab">All steps </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-xl intro tryit">
+                <div class="row  align-items-end ">
+                    <div class="col order-1">
+                        <a id="n1" class="nav-link">
+                            <div id="navCon " class="d-flex justify-content-end">
+                                <img id="navImg" src="assets/img9.png" alt="Person">
+                                <div class="col-md-1"> <button type="button" class="btn btn-secondary btn-lg"
+                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                                        <col>
+                                        Summary
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop1Label"
+                                        aria-hidden="true">
+                                        <div class=" modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5 " id="staticBackdrop1Label"> Summary
+                                                        title</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body ">
+                                                    <p> Summary details
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section4" class="container-fluid">
+            <h1>Solve</h1>
+            <div class="container-xl intro internalDiv">
+                <div class="container-xl tryit">
+                    <div class="row">
+                        <div class="col ">
+                            <a id="n1" class="nav-link">
+                                <div id="navCon">
+                                    <img id="navImg" src="assets/img10.png" alt="Person">
+                                    Problem
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col order-1">
+                            <a id="n1" class="nav-link">
+                                <div id="navCon " class="d-flex justify-content-end">
+                                    <div class="col-md-4">
+                                        <button type="button" class="btn btn-primary ">
+                                            Next problem
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  align-items-center ">
+                    <p id="Problem">Problem statement </p>
+                </div>
+            </div>
+            <div class="container sec4Problem text-center">
+                <div class="row justify-content-around ">
+                    <div class="col-4 ">
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                        <label class="btn btn-outline-primary my1" for="btnradio1">
+                            <img id="navImg" src="assets/n1.png" alt="Person">
+
+                            Option 1</label>
+                    </div>
+                    <div class="col-4">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary my1" for="btnradio2">
+                            <img id="navImg" src="assets/n2.png" alt="Person">
+                            Option 2</label>
+                    </div>
+                </div>
+            </div>
+            <div class="container sec4Problem text-center">
+                <div class="row justify-content-around">
+                    <div class="col-4">
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary my1" for="btnradio3">
+                            <img id="navImg" src="assets/n3.png" alt="Person">
+                            Option 3</label>
+                    </div>
+                    <div class="col-4">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                        <label class="btn btn-outline-primary my1" for="btnradio4">
+                            <img id="navImg" src="assets/n4.png" alt="Person">
+                            Option 4</label>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <button id="submit" type="button" class="btn btn-success">Submit</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" id="hint" class="btn btn-secondary" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Hint"
+                            data-bs-content="This popover is themed via CSS variables.">
+                            Hint
+                        </button>
+
+                    </div>
+                    <div class="col">
+                        <button type="button" id="hint" class="btn btn-info" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Answer"
+                            data-bs-content="This popover is themed via CSS variables.">
+                            Show Answer
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center ">
+                <div class="row ">
+                    <div class="col sec4end">
+                        content
+                    </div>
+
+                </div>
+            </div>
+            <!--
+                <div class="row  align-items-center ">
+                    <div class="col-3 ">
+
+                        <div class=" align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+
+                                <button class="nav-link active sec3button border border-primary" id="v-pills-submit-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-submit" type="button" role="tab"
+                                    aria-controls="v-pills-submit" aria-selected="true">
+                                    Submit
+                                </button>
+                                <button class="nav-link  sec3button border border-primary" id="v-pills-hint-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-hint" type="button" role="tab"
+                                    aria-controls="v-pills-hint" aria-selected="false">
+                                    Hint
+                                </button>
+                                <button class="nav-link  sec3button border border-primary" id="v-pills-ans-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-ans" type="button" role="tab"
+                                    aria-controls="v-pills-ans" aria-selected="false">
+                                    Show Answer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col border border-5" style="height: 350px; background-color: rgba(0,0,255,.1)">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-submit" role="tabpanel"
+                                aria-labelledby="v-pills-submit-tab">Submit</div>
+                            <div class="tab-pane fade" id="v-pills-hint" role="tabpanel"
+                                aria-labelledby="v-pills-hint-tab">Hint </div>
+                            <div class="tab-pane fade" id="v-pills-ans" role="tabpanel"
+                                aria-labelledby="v-pills-ans-tab">Show Answer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+-->
+        </section>
+
+    </div>
+
+
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
