@@ -1,3 +1,10 @@
+//bootstrap popover 
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+
+
+
 let previousPageVisibility = [false, false, false, false]
 let currentNavTickVisibility = [false, false, false, false]
 
@@ -57,8 +64,7 @@ for(let i=0; i<introButtons.length; i++) {
 
 
 
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
 
 var firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
 firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function (e) {
@@ -68,3 +74,6 @@ firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function (e) {
         imageOfInterest.classList.toggle("hidden")
     }
 })
+
+
+MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
