@@ -217,6 +217,13 @@ body {
     color: black;
 }
 
+#showAnswerButton {
+
+    color: yellow;
+    width: 200px;
+    color: black;
+}
+
 #showAns {
     color: rgb(81, 208, 233);
     width: 200px;
@@ -290,4 +297,16 @@ h3{
 }
 .hidden {
     display: none;
+}
+
+.highlight {
+    background-color: #ffffff;
+}
+
+.optionText {
+    z-index: 998;
+}
+
+.optionButton {
+    z-index: 1000;
 }
