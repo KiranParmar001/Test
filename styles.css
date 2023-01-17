@@ -2,7 +2,10 @@ body {
     background-image: url("./assets/");
     position: relative;
     color: black;
-
+    background-image: url("./assets/bg2.jpg");
+    background-size: 700px ;
+    background-size: cover;
+   background-attachment:fixed
 }
 
 /* X-Small devices (portrait phones, less than 576px)*/
