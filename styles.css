@@ -54,7 +54,7 @@ body {
 .topicTitle {
     color: #ffffff;
     font-weight: 600;
-    margin: auto;
+    margin: 5px;
 }
 
 .container {
@@ -90,7 +90,11 @@ body {
     margin: 10px 10px 0 -25px;
     height: 20px;
     width: 20px;
-    
+
+}
+
+#conImg {
+    width: 90%;
 }
 
 #navclickImg {
@@ -104,17 +108,7 @@ body {
     padding: inherit;
 }
 
-#introright {
-    display: inline-block;
-    padding: 0 25px;
-    width: 300px;
-    height: 60px;
-    font-size: 20px;
-    line-height: 50px;
-    border-radius: 40px 0 0 40px;
-    background-color: #88f0cf;
-    clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
-}
+
 
 .sec2end {
     display: inline-block;
@@ -137,16 +131,16 @@ body {
 }
 
 #section1 {
-    margin-top: 200px;
     padding-top: 10px;
     color: rgb(17, 16, 16);
-
+    height: 500px;
 
 }
 
 #section2 {
     padding-top: 25px;
     color: rgb(12, 12, 12);
+    height: 550px;
 
 }
 
@@ -166,7 +160,7 @@ body {
 
 #section3 {
     color: rgb(21, 20, 20);
-
+    height: 650px;
 
 }
 
@@ -186,7 +180,6 @@ body {
 
 #Problem {
     font-size: 20px;
-    text-align: center;
     margin: 10px;
     background-color: #fff2ccff;
     padding: 10px;
@@ -235,14 +228,14 @@ body {
     text-align: center;
     background-color: #fff2ccff;
     height: 100px;
-    padding: auto;
-    margin: 20px -10px 20px 0 ;
+    padding-top: 25px;
+    margin: 20px -10px 20px 0;
+
 }
 
 #section5 {
     padding-top: 50px;
 }
-
 
 
 .nav-pills .nav-link.active,
@@ -255,9 +248,7 @@ body {
     margin-bottom: 10px;
 }
 
-.mySection {
-    padding-top: 200px;
-}
+
 
 .my {
     display: flex;
@@ -280,9 +271,11 @@ body {
     --bs-popover-body-padding-x: 1rem;
     --bs-popover-body-padding-y: .5rem;
 }
-h3{
+
+h3 {
     text-align: center;
 }
+
 .hidden {
     display: none;
 }
