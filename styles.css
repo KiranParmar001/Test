@@ -243,19 +243,7 @@ body {
     padding-top: 50px;
 }
 
-#section6 {
 
-    height: 500px;
-    color: rgb(21, 20, 20);
-    background-color: #e4165b;
-}
-
-#section7 {
-
-    height: 500px;
-    color: rgb(29, 28, 28);
-    background-color: #8be209;
-}
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
