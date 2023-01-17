@@ -2,7 +2,7 @@
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 const quizMessageContainer = document.getElementById("quizMessageContainer")
-let correctAnswerSelected
+
 
 
 
@@ -14,7 +14,7 @@ const nav = document.getElementsByTagName("nav")
 const nav_ = nav[0]
 const navHeight = nav_.offsetHeight
 
-section1.style.marginTop=`${navHeight}px`
+section1.style.marginTop = `${navHeight}px`
 
 const navListItems = document.getElementsByClassName("navListItem")
 const sections = document.getElementsByClassName("pageSection")
@@ -48,17 +48,17 @@ function displayTick() {
 function introductionButtonClickHandler(e) {
     const buttonOfInterest = e.target
     let nextSibling = buttonOfInterest.nextSibling
-    while(nextSibling && nextSibling.nodeType != 1) {
+    while (nextSibling && nextSibling.nodeType != 1) {
         nextSibling = nextSibling.nextSibling
     }
-    if(nextSibling.classList.contains("hidden")) {
+    if (nextSibling.classList.contains("hidden")) {
         nextSibling.classList.toggle("hidden")
     }
 }
 
 const introButtons = document.getElementsByClassName("introButton");
 
-for(let i=0; i<introButtons.length; i++) {
+for (let i = 0; i < introButtons.length; i++) {
     const currentIntroButton = introButtons[i]
     currentIntroButton.addEventListener("click", introductionButtonClickHandler)
 }
@@ -72,11 +72,15 @@ firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function (e) {
     }
 })
 
+let correctAnswerSelected;
+let selectWrongOption2
+let selectWrongOption3
+let selectWrongOption4
 const submitButton = document.getElementById("submit")
 const showAnswerButton = document.getElementById("showAnswerButton")
 
 submitButton.addEventListener("click", () => {
-    if(showAnswerButton.classList.contains("hidden")) {
+    if (showAnswerButton.classList.contains("hidden")) {
         showAnswerButton.classList.toggle("hidden")
     }
 })
@@ -90,23 +94,31 @@ function showSelectAnswerMessage() {
     showMessageForQuiz("First Select an Answer")
 }
 function showWrongAnswerMessage() {
-    quizMessageContainer.style.backgroundColor = "red"
-    showMessageForQuiz("Wrong Answer")
+   // quizMessageContainer.style.backgroundColor = "red"
+    if (selectWrongOption2 == false) {
+        showMessageForQuiz("Incorrect This is the function’s value at x=-8, that is f(-8)=-3")
+    }
+    else if (selectWrongOption3 === false) {
+        showMessageForQuiz("Incorrect, This is the value where you need to evaluate the limit. ")
+    }
+    else if (selectWrongOption4 === false) {
+        showMessageForQuiz("Incorrect, It is possible for the limit of a function to exist at a point, though the limit of the function and the value of the function at the point is different.")
+    }
 }
 function showCorrectAnswerMessage() {
-    quizMessageContainer.style.backgroundColor = "green"
-    showMessageForQuiz("Correct Answer")
+    //quizMessageContainer.style.backgroundColor = "green"
+    showMessageForQuiz("Correct, Despite the fact that f(-8)=-3, as the x-values approach -8 from either side, the f(x) values approach -6")
 }
 
 function removeOptionHighlights() {
     const optionText = document.getElementsByClassName("optionText")
     const optionButtons = document.getElementsByClassName("optionButton")
-    for(let i = 0; i < optionButtons.length; i++) {
+    for (let i = 0; i < optionButtons.length; i++) {
         let currentOptionButton = optionButtons[i]
         currentOptionButton.classList.remove("highlight")
     }
 
-    for(let i = 0; i < optionText.length; i++) {
+    for (let i = 0; i < optionText.length; i++) {
         let currentOptionText = optionText[i]
         currentOptionText.style.backgroundColor = "cbcbc4"
     }
@@ -114,8 +126,11 @@ function removeOptionHighlights() {
 
 const correctAnswerButton = document.getElementById("correctAnswer")
 const wrongAnswerButtons = document.getElementsByClassName("wrongAnswer")
+const selectOption2 = document.getElementsByClassName("btnradio2");
+const selectOption3 = document.getElementsByClassName("btnradio3");
+const selectOption4 = document.getElementsByClassName("btnradio4");
 
-for(let i = 0; i < wrongAnswerButtons.length; i++) {
+for (let i = 0; i < wrongAnswerButtons.length; i++) {
     let currentWrongAnswerButton = wrongAnswerButtons[i]
     currentWrongAnswerButton.addEventListener("click", (e) => {
         // removeOptionHighlights()
@@ -126,7 +141,24 @@ for(let i = 0; i < wrongAnswerButtons.length; i++) {
         correctAnswerSelected = false
     })
 }
-
+for (let i = 0; i < selectOption2.length; i++) {
+    let currentWrongAnswerButton = selectOption2[i]
+    currentWrongAnswerButton.addEventListener("click", (e) => {
+        selectWrongOption2 = false
+    })
+}
+for (let i = 0; i < selectOption3.length; i++) {
+    let currentWrongAnswerButton = selectOption3[i]
+    currentWrongAnswerButton.addEventListener("click", (e) => {
+        selectWrongOption3 = false
+    })
+}
+for (let i = 0; i < selectOption4.length; i++) {
+    let currentWrongAnswerButton = selectOption4[i]
+    currentWrongAnswerButton.addEventListener("click", (e) => {
+        selectWrongOption4 = false
+    })
+}
 correctAnswerButton.addEventListener("click", (e) => {
     // removeOptionHighlights()
     // console.log("target is ", e.target);
@@ -135,9 +167,9 @@ correctAnswerButton.addEventListener("click", (e) => {
 })
 
 submitButton.addEventListener("click", () => {
-    if(correctAnswerSelected === true) {
+    if (correctAnswerSelected === true) {
         showCorrectAnswerMessage()
-    } else if(correctAnswerSelected === false) {
+    } else if (correctAnswerSelected === false) {
         showWrongAnswerMessage()
     } else {
         showSelectAnswerMessage()
@@ -145,4 +177,4 @@ submitButton.addEventListener("click", () => {
 })
 
 
-MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] } });
