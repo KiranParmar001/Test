@@ -30,7 +30,7 @@
         <section id="section0">
             <header id="nav_header">
                 <nav class="navbar navbar-light  fixed-top " id="navbar-example2"
-                    style="background-color: #DDEAF6; max-height: 200px;">
+                    style="background-color: #DDEAF6; max-height: 180px;">
                     <div class="container-fluid collapse navbar-collapse">
                         <div class="container">
 
@@ -67,7 +67,7 @@
                             <div class="row" style="background-color: #027bec">
                                 <div class="col">
                                     <div class="dropdown ">
-                                        <button class="btn btn-primary dropdown-toggle btn-lg" type="button"
+                                        <button class="btn btn-primary dropdown-toggle " type="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Topics
                                         </button>
@@ -90,7 +90,7 @@
                                 <div class="col-sm">
                                     <div class="col">
                                         <div class="dropdown float-end ">
-                                            <button class="btn btn-primary dropdown-toggle btn-lg" type="button"
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
                                                 My courses
                                             </button>
@@ -200,8 +200,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col border border-5 overflow-auto"
-                        style="height: 350px; background-color: rgba(0,0,255,.1)">
+                    <div class="col border border-5 overflow-auto" style="height: 350px; background-color: #F5F5DC">
                         <div class="tab-content " id="v-pills-tabContent">
                             <div class="tab-pane fade show active " id="v-pills-learObj" role="tabpanel"
                                 aria-labelledby="v-pills-learObj-tab">
@@ -285,8 +284,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col border border-5 overflow-auto"
-                        style="height: 350px; background-color: rgba(0,0,255,.1)">
+                    <div class="col border border-5 overflow-auto" style="height: 350px; background-color: #F5F5DC">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-concept" role="tabpanel"
                                 aria-labelledby="v-pills-concept-tab">
@@ -473,8 +471,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col border border-5 overflow-auto"
-                        style="height: 350px; background-color: rgba(0,0,255,.1)">
+                    <div class="col border border-5 overflow-auto" style="height: 350px; background-color: #F5F5DC">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-step1" role="tabpanel"
                                 aria-labelledby="v-pills-step1-tab">
@@ -604,6 +601,7 @@
             </div>
 
         </section>
+        <hr>
         <section id="section4" class="container-fluid pageSection">
             <div class="container-xl intro internalDiv">
                 <div class="container-xl tryit">
@@ -611,8 +609,8 @@
                         <div class="col ">
                             <a id="n1" class="nav-link">
                                 <div id="navCon">
-                                    <img id="navImg" src="assets/img10.png" alt="Person">
-                                    Problem
+                                    <h3> <img id="navImg" src="assets/img10.png" alt="Person">
+                                        Problem </h3>
                                 </div>
                             </a>
                         </div>
@@ -647,7 +645,8 @@
                     <div class="col-4 ">
 
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-                        <label class="optionButton btn btn-outline-primary my1" id="correctAnswer" for="btnradio1">
+                        <label class="optionButton btn btn-outline-primary my1 btnradio1" id="correctAnswer"
+                            for="btnradio1">
                             <img id="navImg" src="assets/n1.png" alt="Person">
 
                             <h3 class="optionText">-6</h3>
@@ -655,7 +654,7 @@
                     </div>
                     <div class="col-4">
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="optionButton btn btn-outline-primary my1 wrongAnswer" for="btnradio2">
+                        <label class="optionButton btn btn-outline-primary my1 wrongAnswer btnradio2" for="btnradio2">
                             <img id="navImg" src="assets/n2.png" alt="Person">
                             <h3 class="optionText">-3</h3>
                         </label>
@@ -667,14 +666,14 @@
                     <div class="col-4">
 
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                        <label class="optionButton btn btn-outline-primary my1 wrongAnswer" for="btnradio3">
+                        <label class="optionButton btn btn-outline-primary my1 wrongAnswer btnradio3" for="btnradio3">
                             <img id="navImg" src="assets/n3.png" alt="Person">
                             <h3 class="optionText">-8</h3>
                         </label>
                     </div>
                     <div class="col-4">
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                        <label class="optionButton btn btn-outline-primary my1 wrongAnswer" for="btnradio4">
+                        <label class="optionButton btn btn-outline-primary my1 wrongAnswer btnradio4" for="btnradio4">
                             <img id="navImg" src="assets/n4.png" alt="Person">
                             <h3 class="optionText">DND</h3>
                         </label>
@@ -689,12 +688,12 @@
                         </button>
                     </div>
                     <div class="col">
-                        <button type="button" id="hint" class="btn btn-secondary" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Hint"
-                            data-bs-content="Hint details">
-                            Hint
-                        </button>
-
+                        <span class="d-inline-block" id="hint" tabindex="0" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Hint ditails">
+                            <button id="hint" class="btn btn-secondary" type="button" >
+                                Hint
+                            </button>
+                        </span>
                     </div>
                     <div class="col">
 
@@ -736,7 +735,7 @@
             </div>
             <div class="container text-center ">
                 <div class="row ">
-                    <div id="quizMessageContainer" class="col sec4end">
+                    <div id="quizMessageContainer" class="col sec4end  text-center">
                     </div>
                 </div>
 
@@ -745,7 +744,7 @@
                     data-bs-target="#staticBackdrop">
                     Next topic
                 </button>
-                <a href="https://github.com/KiranParmar001/calculusModule_sampleHTML/blob/main/assets/Limits.pdf" download="Introduction to Limits and Estimation using Tables and Graphs">
+                <a href="/assets/Limits.pdf" download="Introduction to Limits and Estimation using Tables and Graphs">
                     <button type="button" class="btn btn-success float-start">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-download" viewBox="0 0 16 16">
@@ -781,36 +780,8 @@
                     </div>
                 </div>
             </div>
-            <!--
-                <div class="row  align-items-center ">
-                    <div class="col-3 ">
-
-                        <div class=" align-items-start">
-                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                                aria-orientation="vertical">
-
-                                <button class="nav-link active sec3button border border-primary" id="v-pills-submit-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-submit" type="button" role="tab"
-                                    aria-controls="v-pills-submit" aria-selected="true">
-                                    Submit
-                                </button>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col border border-5" style="height: 350px; background-color: rgba(0,0,255,.1)">
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-submit" role="tabpanel"
-                                aria-labelledby="v-pills-submit-tab">Submit</div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            -->
-
         </section>
-      
+
         <section id="section6">
             <footer class="bg-light text-center text-lg-start">
                 <!-- Copyright -->
