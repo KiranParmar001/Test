@@ -2,12 +2,33 @@ body {
     background-image: url("./assets/");
     position: relative;
     color: black;
-    background-image: url("./assets/bg2.jpg");
+    /* background-image: url("./assets/bg2.jpg"); */
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("./assets/bg2.jpg");
     background-size: 700px ;
     background-size: cover;
-   background-attachment:fixed
-}
+   background-attachment:fixed;
 
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
 /* X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {}
 
@@ -38,22 +59,6 @@ body {
     height: auto;
 }
 
-.topic {
-    width: 140px;
-}
-
-.footer1 {
-    margin-top: 500px;
-}
-
-.Topic {
-    color: rgb(246, 0, 0);
-    text-align: center;
-    margin: 10px;
-    font-size: 30px;
-    display: revert;
-}
-
 .topicTitle {
     color: #ffffff;
     font-weight: 600;
@@ -64,12 +69,7 @@ body {
     max-width: 100%;
 }
 
-.navbar-inverse {
-    display: grid;
-    text-transform: uppercase;
-    margin: auto;
-    background-color: #ffffff;
-}
+
 
 #navCon {
     display: inline-block;
@@ -166,12 +166,6 @@ body {
     height: 650px;
 
 }
-
-.sec3button {
-    margin: 10px;
-
-}
-
 .tryit {
     margin: 20px 0 20px 0;
 }
@@ -229,16 +223,13 @@ body {
 .sec4end {
     font-size: 20px;
     text-align: center;
-    background-color: #fff2ccff;
-    height: 100px;
-    padding-top: 25px;
+    color: #fff;
+    height: 50px;
+    padding: 5px;
     margin: 20px -10px 20px 0;
 
 }
 
-#section5 {
-    padding-top: 50px;
-}
 
 
 .nav-pills .nav-link.active,
