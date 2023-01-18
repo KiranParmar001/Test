@@ -90,11 +90,11 @@ function showMessageForQuiz(msg) {
 }
 
 function showSelectAnswerMessage() {
-    quizMessageContainer.style.backgroundColor = "yellow"
+    quizMessageContainer.style.backgroundColor = "#FFFFA7"
     showMessageForQuiz("First Select an Answer")
 }
 function showWrongAnswerMessage() {
-   quizMessageContainer.style.backgroundColor = "red"
+   quizMessageContainer.style.backgroundColor = "#faa5a5"
     if (selectWrongOption2 == false) {
         showMessageForQuiz("Incorrect This is the function’s value at x=-8, that is f(-8)=-3")
     }
@@ -106,7 +106,7 @@ function showWrongAnswerMessage() {
     }
 }
 function showCorrectAnswerMessage() {
-    quizMessageContainer.style.backgroundColor = "green"
+    quizMessageContainer.style.backgroundColor = "#90EE90"
     showMessageForQuiz("Correct, Despite the fact that f(-8)=-3, as the x-values approach -8 from either side, the f(x) values approach -6")
 }
 
