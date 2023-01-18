@@ -2,12 +2,9 @@ body {
     background-image: url("./assets/");
     position: relative;
     color: black;
-    /* background-image: url("./assets/bg2.jpg"); */
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("./assets/bg2.jpg");
-    background-size: 700px ;
+    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url("./assets/bg5.jpg");
     background-size: cover;
-   background-attachment:fixed;
-
+    background-attachment: fixed;
 }
 
 #logo {
@@ -34,23 +31,27 @@ body {
     max-width: 100%;
 }
 
-
-
 #navCon {
     display: inline-block;
     padding: 0 25px;
     height: 50px;
     font-size: 16px;
     line-height: 50px;
-
+    font-weight: bold;
     font-size: 15px;
 }
 
 #navImg {
-    float: left;
-    margin: 0 10px 0 -25px;
+
     height: 50px;
     width: 50px;
+}
+
+.navbar-inverse {
+    display: grid;
+    text-transform: uppercase;
+    margin: auto;
+    background-color: #ffffff;
 }
 
 #clickImg {
@@ -75,9 +76,6 @@ body {
 .intro {
     padding: inherit;
 }
-
-
-
 .sec2end {
     display: inline-block;
     padding: 0 25px;
@@ -85,9 +83,7 @@ body {
     height: 60px;
     font-size: 20px;
     line-height: 50px;
-
     background-color: #fbe4d4ff;
-
 }
 
 #introimg {
@@ -102,7 +98,6 @@ body {
     padding-top: 10px;
     color: rgb(17, 16, 16);
     height: 500px;
-
 }
 
 #section2 {
@@ -128,9 +123,10 @@ body {
 
 #section3 {
     color: rgb(21, 20, 20);
-    height: 650px;
+    height: 700px;
 
 }
+
 .tryit {
     margin: 20px 0 20px 0;
 }
@@ -142,7 +138,6 @@ body {
 
 #Problem {
     font-size: 20px;
-    margin: 10px;
     background-color: #fff2ccff;
     padding: 10px;
 }
@@ -156,7 +151,6 @@ body {
 
 .sec4Problem {
     padding: 20px;
-    margin-bottom: 50px;
 }
 
 #submit {
@@ -188,40 +182,46 @@ body {
 .sec4end {
     font-size: 20px;
     text-align: center;
-    color: #fff;
     height: 50px;
     padding: 5px;
-    margin: 20px -10px 20px 0;
+    margin: 15px 0px 5px 0;
+    font-weight: bold;
 
 }
 
+#section6 {
+    padding-top: 10px;
+    color: rgb(17, 16, 16);
+    height: 500px;
+}
 
+footer {
+    margin-top: 50px;
+}
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #28a745;
+    margin: 5px 0 0 0;
 }
 
 .navButton {
     margin-bottom: 10px;
 }
 
-
-
 .my {
     display: flex;
     padding: 20px;
+    justify-content: space-evenly;
 }
 
 .my1 {
-    width: 200px;
-    height: 60px;
+    width: 100px;
     text-align: left;
-    background-color: #cbcbc4;
+    background-color: #f4f4b3;
     color: rgb(21, 20, 20);
 }
-
 .custom-popover {
     --bs-popover-max-width: 200px;
     --bs-popover-border-color: var(--bs-primary);
